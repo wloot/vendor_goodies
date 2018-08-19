@@ -3,9 +3,9 @@
     <!--whether the device is pad-->
     <bool name="is_pad">false</bool>
     <!--whether the device is xiaomi-->
-    <bool name="is_xiaomi">false</bool>
+    <bool name="is_xiaomi">true</bool>
     <!--whether the device is hongmi-->
-    <bool name="is_hongmi">true</bool>
+    <bool name="is_hongmi">false</bool>
     <!--whether the device support alpha optimized-->
     <bool name="support_alpha_optimized">true</bool>
     <!--whether the device supports torch-->
@@ -13,23 +13,25 @@
     <!--whether install the fm app-->
     <bool name="support_fm">true</bool>
     <!--whether the device supports oldman mode-->
-    <bool name="support_oldman_mode">true</bool>
+    <bool name="support_oldman_mode">false</bool>
     <!--whether the device is dual sim card-->
     <bool name="support_dual_sim_card">true</bool>
     <!--whether the device has dual systems-->
     <bool name="is_dual_system">false</bool>
-    <!--whether the device has dual sd card-->
-    <bool name="support_dual_sd_card">true</bool>
+    <!--whether the device is emulated sdcard-->
+    <bool name="is_emulated_sdcard">true</bool>
     <!--whether the device supports bt debug trace-->
     <bool name="btdebug_enabled">true</bool>
     <!--whether the device supports page layout-->
     <bool name="support_page_layout">false</bool>
     <!--whether the device supports record param-->
-    <bool name="support_record_param">false</bool>
+    <bool name="support_record_param">true</bool>
     <!--whether the device supports interview record param-->
     <bool name="support_interview_record_param">true</bool>
     <!--whether the device supports stereo record-->
     <bool name="support_stereo_record">true</bool>
+    <!--whether the device supports hd record param-->
+    <bool name="support_hd_record_param">true</bool>
     <!--whether the device supports screen paper mode-->
     <bool name="support_screen_paper_mode">true</bool>
     <!--whether the device supports button light-->
@@ -119,7 +121,9 @@
     <!--whether support boosting screen brightness in camera-->
     <bool name="support_camera_boost_brightness">true</bool>
     <!--whether taking lower size panorama in camera-->
-    <bool name="is_lower_size_panorama">true</bool>
+    <bool name="is_lower_size_panorama">false</bool>
+    <!--whether support full size panorama in camera-->
+    <bool name="support_full_size_panorama">true</bool>
     <!--whether taking lower size effect image in camera-->
     <bool name="is_lower_size_effect">false</bool>
     <!-- support nfc -->
@@ -149,7 +153,7 @@
     <!--whether freeze preview after hdr capture in camera-->
     <bool name="is_camera_freeze_after_hdr_capture">false</bool>
     <!--whether set orientation info for face detection in camera-->
-    <bool name="is_camera_face_detection_need_orientation">false</bool>
+    <bool name="is_camera_face_detection_need_orientation">true</bool>
     <!--whether hold blured background for effects preview in camera-->
     <bool name="is_camera_hold_blur_background">true</bool>
     <!--whether support peaking mf in camera-->
@@ -164,8 +168,14 @@
     <bool name="is_camera_app_water_mark">true</bool>
     <!--whether support tiltshift  in camera-->
     <bool name="support_camera_tilt_shift">true</bool>
+    <!--whether support magic mirror in camera-->
+    <bool name="support_camera_magic_mirror">true</bool>
+    <!--whether support groupshot mode  in camera-->
+    <bool name="support_camera_groupshot">true</bool>
     <!--whether support snap with screen off  in camera-->
-    <bool name="support_camera_quick_snap">false</bool>
+    <bool name="support_camera_quick_snap">true</bool>
+    <!--whether support psensor in pocket mode (true by default)-->
+    <bool name="support_psensor_pocket_mode">false</bool>
     <!-- whether the device app permission detail show in provision-->
     <bool name="support_provision_app_permission">true</bool>
     <!--whether support pre-installed application-->
@@ -183,11 +193,13 @@
     <!--Flag of reduce preview size in camera(1:reduce, 0:do not reduce; 1st byte:rear camera, 2nd byte:front camera, 3rd byte:rear video, 4th byte:front video )-->
     <integer name="camera_reduce_preview_flag">14</integer>
     <!--max number of burst images one time -->
-    <integer name="burst_shoot_count">20</integer>
+    <integer name="burst_shoot_count">100</integer>
     <!--support front flash or not-->
     <bool name="support_front_flash">true</bool>
     <!--b0:flash b1:hdr b2:motion b3:night-->
-    <integer name="camera_supported_asd">11</integer>
+    <integer name="camera_supported_asd">9</integer>
+    <!--whether rotate the final image in camera isp-->
+    <bool name="is_camera_isp_rotated">false</bool>
     <!--front asd b0:flash b1:hdr b2:motion b3:night-->
     <integer name="camera_supported_front_asd">10</integer>
     <!-- front hht enhance-->
@@ -195,11 +207,13 @@
     <!--whether front sensor support remosic-->
     <bool name="is_front_remosic_sensor">true</bool>
     <!--max cpu freq of the device-->
-    <integer name="cpu_max_freq">200</integer>
+    <integer name="cpu_max_freq">235</integer>
+    <!--Successful flag of camera continuous auto focus  result-->
+    <integer name="camera_focus_success_flag">2</integer>
     <!--total steps number of camera compensation-->
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
-    <float name="camera_front_count_down_margin">0.3177</float>
+    <float name="camera_front_count_down_margin">-0.8546</float>
     <!--When these apps access camera, force use higher size -->
     <string-array name="remove_lower_perview_size_list">
         <item>com.tencent.mm</item>
@@ -322,4 +336,12 @@
     <bool name="is_support_tele_asd_night">true</bool>
     <!-- whether this device is Android one -->
     <bool name="is_android_one_device">true</bool>
+    <!--whether sensor_has_latency-->
+    <bool name="sensor_has_latency">true</bool>
+    <!--whether support freeform mode in game mode-->
+    <bool name="support_freeform_reply">true</bool>
+    <!--whether back camera support bokeh or not-->
+    <bool name="is_back_bokeh_supported">true</bool>
+    <!-- device sar value -->
+    <float name="device_sar">0.880</float>
 </features>
