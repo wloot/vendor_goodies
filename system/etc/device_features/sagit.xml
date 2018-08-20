@@ -336,6 +336,8 @@
    <!--whether support tele asd night in camera-->
    <bool name="is_support_tele_asd_night">true</bool>
    <bool name="is_support_optical_zoom">true</bool>
-    <!-- whether this device is Android one -->
-    <bool name="is_android_one_device">true</bool>
+   <!-- whether this device is Android one -->
+   <bool name="is_android_one_device">true</bool>
+   <!--whether back camera support bokeh or not-->
+   <bool name="is_back_bokeh_supported">true</bool>
 </features>
