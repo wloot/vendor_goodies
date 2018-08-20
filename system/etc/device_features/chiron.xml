@@ -214,6 +214,9 @@
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
     <float name="camera_front_count_down_margin">-0.8546</float>
+    <!-- We use this to remove finger print capture of Camera -->
+    <bool name="front_fingerprint_sensor">true</bool>
+    <bool name="support_parallel_process">false</bool>
     <!--When these apps access camera, force use higher size -->
     <string-array name="remove_lower_perview_size_list">
         <item>com.tencent.mm</item>
