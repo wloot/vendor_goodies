@@ -53,8 +53,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     MiuiCamera \
-    MiuiCalculator
+    MiuiCalculator \
+    PixelLauncher
+
+# Sysconfig
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/system/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    $(VENDOR_PATH)/system/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/goodies/overlay/common
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/goodies/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(VENDOR_PATH)/overlay/common
