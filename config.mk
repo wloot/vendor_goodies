@@ -52,7 +52,8 @@ PRODUCT_COPY_FILES += \
 endif
 
 PRODUCT_PACKAGES += \
-    MiuiCamera
+    MiuiCamera \
+    MiuiCalculator
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/goodies/overlay/common
