@@ -53,3 +53,7 @@ endif
 
 PRODUCT_PACKAGES += \
     MiuiCamera
+
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/goodies/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/goodies/overlay/common
