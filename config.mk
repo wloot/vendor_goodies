@@ -46,10 +46,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
 
-ifeq ($(TARGET_DEVICE),sagit)
+#ifeq ($(TARGET_DEVICE),sagit)
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml
-endif
+#endif
 
 PRODUCT_PACKAGES += \
     MiuiCamera \
