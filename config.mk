@@ -12,10 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR_PATH := vendor/xiaomi/MiuiCamera
+VENDOR_PATH := vendor/goodies
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml \
     $(VENDOR_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
     $(VENDOR_PATH)/system/lib/libCameraEffectJNI.so:system/lib/libCameraEffectJNI.so \
     $(VENDOR_PATH)/system/lib/libblurbuster.so:system/lib/libblurbuster.so \
@@ -47,5 +46,14 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
 
+ifeq ($(TARGET_DEVICE),sagit)
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml
+endif
+
 PRODUCT_PACKAGES += \
     MiuiCamera
+
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/goodies/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/goodies/overlay/common
