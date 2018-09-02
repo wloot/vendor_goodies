@@ -220,8 +220,6 @@
     <integer name="cpu_max_freq">215</integer>
     <!--Successful flag of camera continuous auto focus  result-->
     <integer name="camera_focus_success_flag">2</integer>
-    <!--b0:flash b1:hdr b2:motion b3:night-->
-    <integer name="camera_supported_asd">8</integer>
     <!--total steps number of camera compensation-->
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
@@ -253,15 +251,15 @@
     <bool name="middle_keycode_is_dpad_center">false</bool>
     <!--wheater the device supports force touch -->
     <bool name="support_force_touch">false</bool>
-    <!-- font scale for largeui mode -->
+    <!-- font scale for smallui mode -->
     <float name="smallui_font_scale">0.86</float>
-    <!-- font scale for largeui mode -->
+    <!-- font scale for mediumui mode -->
     <float name="mediumui_font_scale">1.05</float>
     <!-- font scale for largeui mode -->
     <float name="largeui_font_scale">1.25</float>
-    <!-- font scale for largeui mode -->
+    <!-- font scale for hugeui mode -->
     <float name="hugeui_font_scale">1.40</float>
-    <!-- font scale for largeui mode -->
+    <!-- font scale for godzillaui mode -->
     <float name="godzillaui_font_scale">1.40</float>
     <!-- support nfc -->
     <bool name="support_nfc">true</bool>
@@ -296,6 +294,8 @@
     <bool name="camera_is_support_portrait_switch">true</bool>
     <!-- whether camera support AI lens entry -->
     <bool name="camera_support_ai_lens">true</bool>
+    <!-- whether camera support AI scene entry -->
+    <bool name="camera_supported_ai_scene">true</bool>
     <!--whether taking legacy face beauty in camera-->
     <bool name="is_legacy_face_beauty">false</bool>
     <!--whether front camera support hdr or not-->
@@ -309,11 +309,11 @@
 　  <bool name="support_front_bokeh">true</bool>
     <!--whether support auto mirror in camera-->
     <bool name="support_auto_mirror">false</bool>
-    <!--whether support auto mirror in camera-->
+    <!--whether enhance beauty with hht alg-->
     <bool name="enhance_beauty_with_hht">true</bool>
     <!--whether support add watermark on bottom left of picture-->
     <bool name="support_picture_watermark">true</bool>
-    <!--whether need video stabilizatiion crop-->
+    <!--whether need disable video stabilizatiion in slow speed mode-->
     <bool name="disable_video_stabilization_in_speed_slow_mode">true</bool>
     <!--whether add algorithm in file name or not-->
     <bool name="enable_algorithm_in_file_suffix">false</bool>
@@ -329,15 +329,12 @@
     <bool name="support_camera_video_face_detection">true</bool>
     <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
     <integer name="support_camera_hfr_max_quality">3</integer>
-   <!--whether taking 18x9 ratio screen in camera-->
-   <bool name="is_18x9_ratio_screen">false</bool>
-   <bool name="camera_support_ai_lens">true</bool>
-   <bool name="camera_supported_ai_scene">true</bool>
-   <!--whether support tele asd night in camera-->
-   <bool name="is_support_tele_asd_night">true</bool>
-   <bool name="is_support_optical_zoom">true</bool>
-   <!-- whether this device is Android one -->
-   <bool name="is_android_one_device">true</bool>
+    <!--whether taking 18x9 ratio screen in camera-->
+    <bool name="is_18x9_ratio_screen">false</bool>
+    <!--whether support tele asd night in camera-->
+    <bool name="is_support_tele_asd_night">true</bool>
+    <!-- whether this device is Android one -->
+    <bool name="is_android_one_device">true</bool>
    <!--whether back camera support bokeh or not-->
    <bool name="is_back_bokeh_supported">true</bool>
 </features>
