@@ -19,7 +19,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     MiuiCalculator \
-    PixelLauncher
+    PixelLauncher \
+    BreventBooter
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
