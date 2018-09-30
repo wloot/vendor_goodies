@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    $(VENDOR_PATH)/system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml:system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml \
     $(VENDOR_PATH)/system/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Overlays
