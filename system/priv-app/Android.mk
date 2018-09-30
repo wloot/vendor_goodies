@@ -15,7 +15,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := PixelLauncher
+LOCAL_MODULE := NexusLauncher
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := PixelLauncher/PixelLauncher.apk
 LOCAL_CERTIFICATE := PRESIGNED

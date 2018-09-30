@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_PACKAGES += \
     MiuiCalculator \
-    PixelLauncher \
+    NexusLauncher \
     BreventBooter \
     MiuiCamera
 
