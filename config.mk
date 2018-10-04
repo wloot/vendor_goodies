@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml
     
 PRODUCT_PACKAGES += \
-    MiuiCalculator \
     NexusLauncher \
     BreventBooter \
     MiuiCamera
