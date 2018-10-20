@@ -1,16 +1,7 @@
 # Copyright (C) 2018 Xiaomi
-# Copyright (C) 2018 JianYu
+# Copyright (C) 2018 Simplemobiletools
 
 LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := BreventBooter
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := BreventBooter/BreventBooter.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
 
 ifeq ($(TARGET_PRODUCT),nitrogen_sagit)
 include $(CLEAR_VARS)
