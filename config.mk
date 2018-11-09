@@ -19,15 +19,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml
     
 PRODUCT_PACKAGES += \
+    NexusLauncher \
     MiuiCamera
-    
-#PRODUCT_PACKAGES += \
-#    NexusLauncher
 
 # Sysconfig
-#PRODUCT_COPY_FILES += \
-#    $(VENDOR_PATH)/system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml:system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml \
-#    $(VENDOR_PATH)/system/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml:system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml \
+    $(VENDOR_PATH)/system/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay/common
