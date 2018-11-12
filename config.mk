@@ -16,7 +16,8 @@ VENDOR_PATH := vendor/goodies
 
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml \
-    $(LOCAL_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml
+    $(VENDOR_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
+    $(VENDOR_PATH)/system/fonts/MIUI_Time.ttf:system/fonts/MIUI_Time.ttf    
     
 PRODUCT_PACKAGES += \
     NexusLauncher \
