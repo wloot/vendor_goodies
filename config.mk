@@ -28,6 +28,11 @@ PRODUCT_PACKAGES += \
     NexusLauncher \
     MiuiCamera
 
+PRODUCT_PACKAGES += \
+   SubstratumSignature \
+   SubstratumHelperService \
+   substratum-sysconfig.xml
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml:system/etc/sysconfig/launcher-hiddenapi-package-whitelist.xml \
