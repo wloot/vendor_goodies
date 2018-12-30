@@ -21,7 +21,8 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_PACKAGES += \
     NexusLauncher \
-    MiuiCamera
+    MiuiCamera \
+    ViaBrowser
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
