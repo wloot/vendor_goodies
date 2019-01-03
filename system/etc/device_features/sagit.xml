@@ -329,6 +329,8 @@
     <bool name="support_camera_video_face_detection">true</bool>
     <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
     <integer name="support_camera_hfr_max_quality">3</integer>
+    <bool name="support_camera_hfr_bitrate_scale">true</bool>
+    <bool name="support_camera_video_high_frame">true</bool>
     <!--whether taking 18x9 ratio screen in camera-->
     <bool name="is_18x9_ratio_screen">false</bool>
     <!--whether support tele asd night in camera-->
