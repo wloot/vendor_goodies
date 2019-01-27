@@ -16,7 +16,8 @@ VENDOR_PATH := vendor/goodies
 
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
-    $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf    
+    $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
+    $(VENDOR_PATH)/system/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
     
 PRODUCT_PACKAGES += \
     NexusLauncher \
