@@ -3,7 +3,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_PRODUCT),nitrogen_sagit)
 include $(CLEAR_VARS)
 LOCAL_MODULE := Gallery2
 LOCAL_MODULE_TAGS := optional
@@ -34,4 +33,3 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
-endif
