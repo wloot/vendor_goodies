@@ -18,8 +18,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
     
 PRODUCT_PACKAGES += \
-    MiuiCamera \
-    ViaBrowser
+    MiuiCamera
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay
